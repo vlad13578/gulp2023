@@ -1,0 +1,8 @@
+.no-webp body {
+  background: url("../img/EUp7KgoXYAMtmV0.jpg") 0 0 no-repeat; }
+
+body span {
+  color: rgb(233, 27, 27);
+}
+
+.webp body { background: url(../img/EUp7KgoXYAMtmV0.webp) 0 0 no-repeat; }

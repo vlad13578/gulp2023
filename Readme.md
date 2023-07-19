@@ -1,6 +1,7 @@
-Налаштування для pug
-
 https://stackoverflow.com/questions/61339968/error-message-devtools-failed-to-load-sourcemap-could-not-load-content-for-chr
+
+
+Налаштування для pug
 
 [Youtube-link](https://youtu.be/jU88mLuLWlk?t=2644)
 

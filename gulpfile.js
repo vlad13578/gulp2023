@@ -21,6 +21,9 @@ import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { images } from "./gulp/tasks/images.js";
 import { otfToTtf, ttfToWoff, fonstStyle } from "./gulp/tasks/fonts.js";
+import { svgSprive } from "./gulp/tasks/svgSprive.js";
+
+export { svgSprive }
 
 //Спостерігач за змінами в файлах
 function watcher() {

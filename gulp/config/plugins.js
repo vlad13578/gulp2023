@@ -10,5 +10,5 @@ export const plugins = {
     plumber: plumber,
     notify: notify,
     browsersync: browsersync,
-    newer:newer,
-}
+    newer: newer,
+};

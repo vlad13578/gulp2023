@@ -7,6 +7,8 @@ import { plugins } from "./gulp/config/plugins.js";
 
 // Передаємо значення в глобальну змінну
 global.app = {
+    isBuild: process.argv.includes("--build"),
+    isDev: !process.argv.includes("--build"),
     gulp: gulp,
     path: path,
     plugins: plugins,
@@ -23,7 +25,7 @@ import { images } from "./gulp/tasks/images.js";
 import { otfToTtf, ttfToWoff, fonstStyle } from "./gulp/tasks/fonts.js";
 import { svgSprive } from "./gulp/tasks/svgSprive.js";
 
-export { svgSprive }
+export { svgSprive };
 
 //Спостерігач за змінами в файлах
 function watcher() {
@@ -41,6 +43,11 @@ const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images)
 
 // Побудова сценаріїв виконання завдань
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
+const build = gulp.series(reset, mainTasks);
+
+//Експорт сценаріїв
+export { dev };
+export { build };
 
 // Виконання сценарія за замовчуваннями
 gulp.task("default", dev);

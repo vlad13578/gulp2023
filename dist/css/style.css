@@ -33,4 +33,14 @@
 .no-webp body {
   background: url("../img/EUp7KgoXYAMtmV0.jpg") 0 0 no-repeat; }
 
+@media (max-width: 200px) {
+  span {
+    font-size: 20px;
+  }
+
+  span {
+    background: #000;
+  }
+}
+
 .webp body { background: url(../img/EUp7KgoXYAMtmV0.webp) 0 0 no-repeat; }
